@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS INTRODUCTION</title>
+</head>
+<body>
+    <h2>JAVA SCRIPT</h2>
+    <script>
+
+        // using var keyword
+        // in JavaScript, variables are declared using three primary keywords: var, let, and const. These keywords define how the variable behaves in terms of scope, re-declaration, and updation/reassignment.
+
+        var myName="Anmol Rajput";     // giving variable
+
+        // The JavaScript document object represents the entire HTML document loaded in a web browser. It is the entry point for interacting with and manipulating the content, structure, and style of the webpage using the Document Object Model (DOM).
+
+        document.write(myName);   // output on browser
+        console.log(myName);     // output on console 
+
+        // JS Execution and Scope in JS ( Global and Local ) - Creating function
+
+        function hello() {
+            var message="Thanks to Visit";
+            console.log(message);
+        }
+        hello();
+
+        // variable declaration using let and const
+
+        let myRollno=2503201000315;
+        console.log(myRollno);
+
+        myRollno=202501010634;      // let - no redeclaration but can be reasigned
+        console.log(myRollno);
+
+        const myPhoneno=7017584032;
+        console.log("my phone no is : " + myPhoneno);
+
+        // myPhoneno=9720780313;        // const - no redeclaraton no reasigned
+        // console.log(myPhoneno);
+
+
+
+    </script>
+    
+</body>
+</html>
