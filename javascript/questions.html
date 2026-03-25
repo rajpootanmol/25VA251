@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let subjectMarks=[23,45,67,78,89,56];
+        let sum = 0;
+
+        // grade the marks of the following students data
+
+         for(let i=0;i<subjectMarks.length;i++){
+            sum = sum + subjectMarks[i];
+            if(subjectMarks[i]>90){
+                console.log("A grade");
+            }
+            else if(subjectMarks[i]>80 && subjectMarks[i]<=90){
+                console.log("B grade");
+            }
+            else if(subjectMarks[i]>70 && subjectMarks[i]<=80){
+                console.log("C grade");
+            }
+            else if(subjectMarks[i]>60 && subjectMarks[i]<=70){
+                console.log("D grade");
+            }
+            else{
+                console.log("Fail");
+            }
+        }
+        console.log("the sum of marks is : " + sum)
+    </script>
+</body>
+</html>

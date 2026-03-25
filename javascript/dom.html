@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--n JavaScript, the DOM (Document Object Model) is a programming interface 
+    that represents the structure of an HTML or XML document as a tree of objects.It
+    allows JavaScript to access, modify, add, or delete elements and their attributes dynamically.-->
+
+    <h2>Check your age to cast the vote</h2>
+    <form action="">
+        <input type="number" placeholder="Enter your age" name="age" id="age"/>
+        <input type="submit" value="submit" onclick="result()" />
+    </form>
+
+    <input type="text" placeholder="enter your name" id="inputData"/>
+    <h2 id="text">Display Name</h2>
+    <button onclick="changeColor()">click on me</button>
+
+    <script>
+        // function result(){
+        //     let myAge= document.getElementById("age").value;
+        //     if(myAge>18){
+        //         alert("You are eligible to vote");
+        //     }
+        //     else{
+        //         alert("You are not eligible to vote");
+        //     }
+        // }
+
+        function changeColor() {
+            let inputValue=document.getElementById("inputData").value;
+
+            let inputText=document.getElementById('text');
+
+            inputText.innerHTML=inputValue;
+
+            inputText.style.color="red";
+
+            // for random color
+
+            inputText.style.backgroundColor="#"+Math.floor(Math.random() * 1677725).toString(16);
+        }
+    </script>
+</body>
+</body>
+</html>
