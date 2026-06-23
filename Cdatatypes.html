@@ -1,0 +1,50 @@
+<!-- primitives data types in java script - null , number , symbol, string, boolean, bigint, undefined -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 7;
+        let b = "anmol"
+        let c = true;
+        let d = null;
+        let e = BigInt("157")
+        let f = undefined
+        let g = Symbol("i am a very good boy")
+        let h
+
+        console.log(a, b, c, d, e, f, g, h)
+
+        console.log(typeof a)
+        console.log(typeof b)
+        console.log(typeof c)
+        console.log(typeof d)
+        console.log(typeof e)
+        console.log(typeof f)
+        console.log(typeof g)
+        console.log(typeof h)      // tells about the data type of the variable
+
+        // objects in javascript / non primitive data type
+
+        const items = {
+            "yash": true,
+            "anmol": false,
+            "nonu": undefined,
+            "ironman": 7
+        }
+
+        console.log(items["yash"])
+        console.log(items["anmol"])
+        console.log(items["nonu"])
+        console.log(items["ironman"])
+
+
+    </script>
+    
+</body>
+</html>
